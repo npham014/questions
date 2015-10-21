@@ -1,8 +1,11 @@
 static int methodFor(int n)
 {
-	(void)n;
-	
-	return 0;
+	int total = 0;
+
+	for(int i = 1; i <= n; i++) 
+		total += i;
+
+	return i;
 }
 
 static int methodWhile(int n)

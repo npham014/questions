@@ -1,16 +1,21 @@
 static int methodFor(int n)
 {
-	int total = 0;
-
-	for(int i = 1; i <= n; i++) 
+	unsigned i = 0;
+	unsigned short total = 0;
+	for(; i <= n; ++i)
 		total += i;
-
 	return i;
-}
+} 
 
 static int methodWhile(int n)
 {
-	(void)n;
+	unsigned short i = 0;
+	unsigned short total = 0;
+	while(i <= n){
+		total += i;
+		++i;
+	}
+
 	return 0;
 }
 

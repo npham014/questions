@@ -1,10 +1,9 @@
 static int methodFor(int n)
 {
-	int i = 0;
 	int total = 0;
-	for(; i <= n; ++i)
+	for(int i = 1; i <= n; ++i)
 		total += i;
-	return i;
+	return total;
 } 
 
 static int methodWhile(int n)

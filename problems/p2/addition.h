@@ -15,7 +15,7 @@ static int methodWhile(int n)
 		++i;
 	}
 
-	return 0;
+	return total;
 }
 
 static int methodRecurse(int n) {

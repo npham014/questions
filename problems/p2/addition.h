@@ -1,6 +1,7 @@
 static int methodFor(int n)
 {
 	(void)n;
+	
 	return 0;
 }
 

@@ -1,7 +1,7 @@
 static int methodFor(int n)
 {
-	unsigned i = 0;
-	unsigned short total = 0;
+	int i = 0;
+	int total = 0;
 	for(; i <= n; ++i)
 		total += i;
 	return i;
@@ -9,8 +9,8 @@ static int methodFor(int n)
 
 static int methodWhile(int n)
 {
-	unsigned short i = 0;
-	unsigned short total = 0;
+	int i = 0;
+	int total = 0;
 	while(i <= n){
 		total += i;
 		++i;
@@ -19,8 +19,8 @@ static int methodWhile(int n)
 	return 0;
 }
 
-static int methodRecurse(int n)
-{
-	cout << "i don't know a recurse is";
-	return 0;
+static int methodRecurse(int n) {
+	if(n == 0)
+		return 0;
+	return n + methodRecurse(n-1);
 }

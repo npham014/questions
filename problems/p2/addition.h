@@ -21,6 +21,6 @@ static int methodWhile(int n)
 
 static int methodRecurse(int n)
 {
-	(void)n;
+	cout << "i don't know a recurse is";
 	return 0;
 }

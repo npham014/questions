@@ -3,8 +3,8 @@ static bool isPalindrome(std::string s)
 {
 	bool isPalin = false;
 	
-	for(int i = 0; i < userString.size() / 2; ++i){
-		if(userString.at(i) == userString.at(userString.size() - i)){
+	for(int i = 0; i < s.size() / 2; ++i){
+		if(s.at(i) == s.at(s.size() - i)){
 			isPalin = true;
 		}
 		else{

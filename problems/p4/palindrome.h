@@ -8,7 +8,7 @@ static bool isPalindrome(std::string s)
 	bool isPalin = false;
 	
 	for(unsigned j = 0; j < (s.size() - 1); ++j){
-		if(!(isalpha(s.at(j)))){
+		if(!(isalpha(s.at(j))) && !(isdigit(s.at(j))) ){
 			s.erase(j,1);
 		}
 	}
